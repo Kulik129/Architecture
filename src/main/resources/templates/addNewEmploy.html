@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+  <nav th:insert="~{index.html :: header}"></nav>
+</header>
+
+
+<div class="container">
+  <div class="row">
+    <h1>Add new employ</h1>
+    <form action="/add" method="post">
+      <input type="text" name="name" placeholder="Name" class="form-control"><br>
+      <input type="text" name="grade" placeholder="Grade" class="form-control"><br>
+      <input type="text" name="age" placeholder="Age" class="form-control"><br>
+      <button type="submit" class="btn btn-sm btn-primary">Add</button>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
